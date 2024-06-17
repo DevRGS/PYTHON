@@ -1,19 +1,18 @@
-pessoas = list()
-dados = list()
+galera = list()
+dado = list()
 totmaior = totmenor = 0
 
-for c in range (0,3):
-    dados.append(str(input("Nome: ")))
-    dados.append(int(input("Idade: ")))
-    pessoas.append(dados[:])
-    dados.clear()
-
-for p in pessoas: 
-    if p[1] > 18:
-        totmaior += 1
-        print(f'a {p[0]} é maior de idade')
-    else:
-        totmenor += 1
-        print(f'a {p[0]} é menor de idade')
+for c in range (0, 3):
+    dado.append(str(input("Nome: ")))
+    dado.append(int(input("Idade: ")))
+    galera.append(dado[:])
+    dado.clear()
     
-print(f'No total, tivemos {totmaior} maiores de idade e {totmenor} menores de idade')
+for p in galera:
+    if p[1] > 18:
+        print(f'{p[0]} é maior de idade')
+        totmaior += 1
+    else:
+        print(f'{p[0]} é menor de idade')
+        totmenor += 1
+print(f'No total tivemos {totmaior} de maiores de idade, e {totmenor} menores de idade')
