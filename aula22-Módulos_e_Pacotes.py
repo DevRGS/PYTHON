@@ -1,4 +1,6 @@
 import prog_uteis as pu
+import programas_uteis
+from programas_uteis import numeros
 
 while True:
     num = int(input('Digite um número para ver seu fatorial: '))
@@ -7,3 +9,5 @@ while True:
     resp =(input(f'Quer ver outro fatorial? [S/N] '))
     if resp in 'nN':
         break
+    
+numeros.tabelaMulti(5, 6)
